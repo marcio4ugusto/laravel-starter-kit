@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEFAULT_URL=https://raw.githubusercontent.com/marcio4ugusto/laravel_starter_kit/stubs/default
-SHAD_URL=https://raw.githubusercontent.com/marcio4ugusto/laravel_starter_kit/stubs/shadcn
+DEFAULT_URL=https://raw.githubusercontent.com/marcio4ugusto/laravel-starter-kit/main/stubs/default
+SHAD_URL=https://raw.githubusercontent.com/marcio4ugusto/laravel-starter-kit/main/stubs/shadcn
 
 echo "Starting copy files for the starter kit..."
 
