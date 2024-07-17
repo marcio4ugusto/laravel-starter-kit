@@ -29,11 +29,15 @@ curl $DEFAULT_URL/.gitignore > ./.gitignore
 curl -o ./.eslintrc.json $DEFAULT_URL/.eslintrc.json
 curl $DEFAULT_URL/editorconfig > ./editorconfig
 curl $DEFAULT_URL/routes/web.php > ./routes/web.php
+rm ./resources/js/app.js
+rm ./resources/js/bootstrap.js
 curl -o ./resources/js/app.tsx $DEFAULT_URL/resources/js/app.tsx
+mkdir -p ./resources/js/types
 curl -o ./resources/js/types/global.d.ts $DEFAULT_URL/resources/js/types/global.d.ts
 curl -o ./resources/js/types/index.d.ts $DEFAULT_URL/resources/js/types/index.d.ts
 curl -o ./resources/js/types/vite-env.d.ts $DEFAULT_URL/resources/js/types/vite-env.d.ts
-curl $DEFAULT_URL/resources/js/pages/Welcome.tsx > ./resources/js/pages/Welcome.tsx
+mkdir -p ./resources/js/pages
+curl -o ./resources/js/pages/Welcome.tsx $DEFAULT_URL/resources/js/pages/Welcome.tsx
 mkdir -p ./resources/js/components
 curl $DEFAULT_URL/resources/css/app.css > ./resources/css/app.css
 curl $DEFAULT_URL/app/Http/Middleware/HandleInertiaRequests.php > ./app/Http/Middleware/HandleInertiaRequests.php
@@ -43,6 +47,7 @@ curl $SHAD_URL/tailwind.config.js > ./tailwind.config.js
 curl $SHAD_URL/package.json > ./package.json
 curl -o components.json $SHAD_URL/components.json
 curl $SHAD_URL/resources/js/pages/Welcome.tsx > ./resources/js/pages/Welcome.tsx
+mkdir -p ./resources/js/lib
 curl -o ./resources/js/lib/utils.ts $SHAD_URL/resources/js/lib/utils.ts
 
 # install npm dependencies
